@@ -51,9 +51,15 @@ class Golomt
                 'in_non_cash_buy' => (float)$item[3],
                 'in_non_cash_sell' => (float)$item[4],
             ];
-            if ($currencies && is_array($currencies) && in_array($item[0]['currency'], $currencies)) $xanshuud[] = $x;
-            elseif ($currencies && is_string($currencies) && $item[0]['currency'] == $currencies) return json_encode($x);
-            else $xanshuud[] = $x;
+            if ($currencies) {
+                if (is_array($currencies)) {
+                    if (in_array($item[0]['currency'], $currencies)) $xanshuud[] = $x;
+                } elseif (is_string($currencies)) {
+                    if ($item[0]['currency'] == $currencies) return json_encode($x);
+                }
+            } else {
+                $xanshuud[] = $x;
+            }
         }
 
         return json_encode($xanshuud);
