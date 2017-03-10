@@ -1,5 +1,5 @@
 {
-  "name": "Enkuso/GolomtXansh",
+  "name": "enkuso/golomt-xansh",
   "description": "Golomt bank xansh",
   "minimum-stability": "stable",
   "license": "proprietary",
@@ -10,8 +10,8 @@
     }
   ],
   "require": {
-    "symfony/console": "v3.2.5",
-    "symfony/dom-crawler": "v3.2.5"
+    "symfony/console": "^3.2",
+    "symfony/dom-crawler": "^3.2"
   },
   "autoload": {
     "psr-0": {
