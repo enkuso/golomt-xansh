@@ -1,0 +1,21 @@
+{
+  "name": "Enkuso/GolomtXansh",
+  "description": "Golomt bank xansh",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Enkhbayasgalan",
+      "email": "eegii2you@yahoo.com"
+    }
+  ],
+  "require": {
+    "symfony/console": "v3.2.5",
+    "symfony/dom-crawler": "v3.2.5"
+  },
+  "autoload": {
+    "psr-0": {
+      "": "src/"
+    }
+  }
+}
