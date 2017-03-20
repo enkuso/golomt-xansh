@@ -7,7 +7,7 @@ use Symfony\Component\DomCrawler\Crawler;
 
 class Golomt
 {
-    const WIDGET_URL = "https://golomtbank.com/en/home/ratesForSites";
+    const WIDGET_URL = "https://www.golomtbank.com/en/home/ratesForSites";
 
     public function xanshTatah($currencies = null)
     {
